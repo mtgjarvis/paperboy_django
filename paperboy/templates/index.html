@@ -34,7 +34,13 @@
             <div class='field'>
               <input type="submit" value='Deliver!' class='deliver-button'>
             </div>
+            
           </form>
+        <form class='deliver-form' action="{% url 'details' id=pb.pk %}" method='get'>
+          <div class='field'>
+              <input type="submit" value='Details!' class='deliver-button'>
+          </div>
+        </form>
 
         </li>
       {% endfor %}
